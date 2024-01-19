@@ -114,6 +114,11 @@ Flowise 在一个单一的代码库中有 3 个不同的模块。
 
     现在可以在 [http://localhost:3000](http://localhost:3000) 访问应用
 
+   if `address already in use :::3000`: 
+   ```bash
+   lsof -t -i :3000|xargs kill -9 
+   ```
+
 6. 用于开发构建：
 
     - 在 `packages/ui` 中创建 `.env` 文件并指定 `PORT`（参考 `.env.example`）
